@@ -1,0 +1,81 @@
+.banner-div {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.banner-left {
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.b-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-name>:nth-child(1) {
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.b-name>:nth-child(2) {
+    color: orangered;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.b-name>:nth-child(3) {
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+}
+
+.b-icon {
+    display: flex;
+    gap: 0rem;
+}
+
+.b-icon img {
+    transform: scale(0.5);
+}
+
+.b-icon img:hover {
+    cursor: pointer;
+}
+
+.b-button {
+    text-align: center;
+    width: 12rem;
+    height: 2.5rem;
+    background-color: aqua;
+}
+
+.banner-right {
+    flex: 1;
+    position: relative;
+}
+
+.banner-right>* {
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-right>:nth-child(1) {
+    width: 600px;
+}
+
+.banner-right>:nth-child(2) {
+    transform: scale(0.6);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}

@@ -1,0 +1,17 @@
+.card {
+    width: 17rem;
+    height: 22rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.26);
+    border: 7px solid orangered;
+}
+
+.card>:nth-child(3) {
+    color: black;
+    font-size: 16px;
+}
