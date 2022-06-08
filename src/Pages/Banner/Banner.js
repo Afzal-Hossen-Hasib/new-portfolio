@@ -7,8 +7,12 @@ import crown from '../../image/icon/crown.png'
 import emoji from '../../image/icon/glassesimoji.png'
 import Floating from '../Floating/Floating';
 import resume from './resume.pdf'
+import { motion } from 'framer-motion';
 
 const Banner = () => {
+
+    const transition = {duration : 2, type: 'spring'}
+
     return (
         <div className='banner-div'>
             <div className="banner-left">
@@ -34,8 +38,12 @@ const Banner = () => {
 
             <div className="banner-right">
                     <img src={mypic} alt="" />
-                    <img src={emoji} alt="" />
-                    <div style={{top: '-4%', left : '68%'}}>
+                    <motion.img
+                    initial={{left: '-36%'}}
+                    whileInView={{left: '-24%'}}
+                    transition={transition}
+                    src={emoji} alt="" />
+                    <div className='floating-div' style={{top: '-4%', left : '68%'}}>
                         <Floating image={crown}></Floating>
                     </div>
             </div>

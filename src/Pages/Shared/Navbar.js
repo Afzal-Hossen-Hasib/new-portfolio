@@ -16,8 +16,7 @@ const Navbar = () => {
       </ul>
     </div>
     <div className='n-left'>
-        <div className='n-name'>Afzal Hossen</div>
-        <span>toggle</span>
+        <div className='n-name'>Hasib</div>
     </div>
   </div>
   <div class="navbar-center hidden lg:flex">

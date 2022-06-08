@@ -21,9 +21,9 @@ const Contact = () => {
 
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200">
+            <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={contact} class="w-2/4 rounded-lg shadow-2xl" />
+    <img src={contact} class="max-w-lg rounded-lg shadow-2xl" />
     <div>
       <h1 class="text-3xl font-bold">Get In Touch Contact Me</h1>
       

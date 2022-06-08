@@ -7,7 +7,7 @@ import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
-    <div >
+    <div>
       <Navbar></Navbar>
       <Home></Home>
       <Routes>
