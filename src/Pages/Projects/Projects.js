@@ -9,7 +9,7 @@ const Projects = () => {
             <h1 className='text-center'>My Projects</h1>
             <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={modern} class="max-w-lg rounded-lg shadow-2xl" />
+    <img src={modern} class="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 class="text-2xl font-bold">MODERN MOTO (MANUFACTURER FULL-STACK WEBSITE)</h1>
       <p class="py-6">
@@ -36,7 +36,7 @@ const Projects = () => {
 
 <div class="hero bg-base-200 my-20">
   <div class="hero-content flex-col lg:flex-row-reverse">
-    <img src={motor} class="max-w-lg rounded-lg shadow-2xl" />
+    <img src={motor} class="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 class="text-2xl font-bold">MOTOR MANIA (WAREHOUSE-MANAGEMENT FULL-STACK WEBSITE )</h1>
       <p class="py-6">
@@ -60,7 +60,7 @@ const Projects = () => {
 
 <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={fitness} class="max-w-lg rounded-lg shadow-2xl" />
+    <img src={fitness} class="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 class="text-2xl font-bold">FITNESS FRIENDS (INDEPENDENT SERVICE PROVIDER FRONT-END WEBSITE)</h1>
       <p class="py-6">

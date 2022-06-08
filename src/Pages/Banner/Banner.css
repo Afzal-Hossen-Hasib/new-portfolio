@@ -1,93 +1,50 @@
-.banner-div {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    height: 77vh;
-    margin-top: 6rem;
+.one {
+    font-size: 4rem;
+    color: #283346;
 }
 
-.banner-left {
-    display: flex;
-    position: relative;
-    flex: 1;
-    flex-direction: column;
-    gap: 2rem;
+.two {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #00BFA6;
 }
 
-.b-name {
-    display: flex;
-    flex-direction: column;
-}
-
-.b-name>:nth-child(1) {
+.resume-button {
+    background-color: #00BFA6;   
+    outline: none;
+    border: none;
     color: black;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
-.b-name>:nth-child(2) {
-    color: orangered;
+.resume-button:hover {
+    
+}
+
+.banner-div p {
+    color: #283346;
+    font-size: 1.1rem;
     font-weight: bold;
-    font-size: 3rem;
 }
 
-.b-name>:nth-child(3) {
-    font-weight: 500;
-    font-size: 14px;
-    color: black;
-    margin-top: 10px;
-}
+@media only screen and (max-width: 576px) {
 
-.b-icon {
-    display: flex;
-    gap: 0rem;
-}
-
-.b-icon img {
-    transform: scale(0.5);
-}
-
-.b-icon img:hover {
-    cursor: pointer;
-}
-
-.b-button {
-    text-align: center;
-    width: 12rem;
-    height: 2.5rem;
-    background-color: aqua;
-}
-
-.banner-right {
-    flex: 1;
-    position: relative;
-}
-
-.banner-right>* {
-    position: absolute;
-    z-index: 1;
-}
-
-.banner-right>:nth-child(1) {
-    width: 600px;
-}
-
-.banner-right>:nth-child(2) {
-    transform: scale(0.6);
-    top: -19%;
-    left: -24%;
-    border-radius: 50%;
-    padding: 0;
-}
-
-@media screen and (max-width: 480px) {
-    .banner-div {
-        flex-direction: column;
-        height: 64rem;
+    .one {
+        font-size: 2rem;
+        color: #283346;
     }
 
-    .banner-right {
-        transform: scale(0.8);
-        left: -3rem;
+    .two {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #00BFA6;
+    }
+
+    .banner-div p {
+        color: #283346;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: justify;
     }
 }

@@ -1,52 +1,21 @@
 import React from 'react';
 import './Banner.css'
-import github from '../../image/icon/github.png'
-import linkedin from '../../image/icon/linkedin.png'
-import mypic from '../../image/pic/shape-3 (1).png'
-import crown from '../../image/icon/crown.png'
-import emoji from '../../image/icon/glassesimoji.png'
-import Floating from '../Floating/Floating';
-import resume from './resume.pdf'
-import { motion } from 'framer-motion';
+import mypic from '../../image/pic/9648-removebg.png'
 
 const Banner = () => {
 
-    const transition = {duration : 2, type: 'spring'}
-
     return (
-        <div className='banner-div'>
-            <div className="banner-left">
-                <div className="b-name">
-                    <span>Hi!! I Am </span>
-                    <span>Afzal Hossen Hasib</span>
-                    <p>Passionate web developer. Always eager to learn new technologies. The last few months made me skilled in the web development field.</p>
-                </div>
-                <a href={resume} download>
-
-                <button className='b-button'>DOWNLOAD RESUME</button>
-                </a>
-                
-                <div className="b-icon">
-                    <a href="https://github.com/afzahossenhasib" target="_blank">
-                    <img src={github} alt="" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/afzal-hossen-hasib-ba159b241/" target="_blank">
-                    <img src={linkedin} alt="" />
-                    </a>
-                </div>
-            </div>
-
-            <div className="banner-right">
-                    <img src={mypic} alt="" />
-                    <motion.img
-                    initial={{left: '-36%'}}
-                    whileInView={{left: '-24%'}}
-                    transition={transition}
-                    src={emoji} alt="" />
-                    <div className='floating-div' style={{top: '-4%', left : '68%'}}>
-                        <Floating image={crown}></Floating>
-                    </div>
-            </div>
+        <div className='mt-10 mb-20 banner-div'>
+            <div class="hero bg-base-200">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <img src={mypic} class="max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 class="text-5xl font-bold"><span className='one'>Hi! I Am</span> <br /> <span className='two'>Afzal Hossen Hasib</span></h1>
+      <p class="py-6">I'm a Bangladesh based front‑end developer focused on crafting clean and user‑friendly experiences, I am passionate about building excellent website that improves the lives of those around me.</p>
+      <button class="btn resume-button">Download Resume</button>
+    </div>
+  </div>
+</div>
         </div>
     );
 };

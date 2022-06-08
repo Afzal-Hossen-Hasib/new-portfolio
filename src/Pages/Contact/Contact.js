@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import contact from '../../image/email/contact.png'
+import './Contact.css'
 
 const Contact = () => {
 
@@ -20,10 +21,10 @@ const Contact = () => {
  
 
     return (
-        <div>
+        <div className='contact'>
             <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={contact} class="max-w-lg rounded-lg shadow-2xl" />
+    <img src={contact} class="w-3/6 rounded-lg shadow-2xl" />
     <div>
       <h1 class="text-3xl font-bold">Get In Touch Contact Me</h1>
       
