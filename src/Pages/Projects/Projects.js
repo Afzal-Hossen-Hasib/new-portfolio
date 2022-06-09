@@ -2,15 +2,16 @@ import React from 'react';
 import modern from '../../image/project/modern-moto.png'
 import motor from '../../image/project/motor-mania.png'
 import fitness from '../../image/project/fitness-friends.png'
+import './Projects.css'
 
 const Projects = () => {
     return (
-        <div>
-            <h1 className='text-center'>My Projects</h1>
+        <div className='project-section'>
+            <h2>My Projects</h2>
             <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
     <img src={modern} class="max-w-md rounded-lg shadow-2xl" />
-    <div>
+    <div className='ml-8'>
       <h1 class="text-2xl font-bold">MODERN MOTO (MANUFACTURER FULL-STACK WEBSITE)</h1>
       <p class="py-6">
           <ul>
@@ -21,13 +22,13 @@ const Projects = () => {
           </p>
       <div>
       <a href="https://modern-motor.web.app/" target='_blank'>
-      <button class="btn btn-sm">Live Site</button>
+      <button class="btn btn-sm resume-button">Live Site</button>
       </a>
       <a className='mx-5' href="https://github.com/afzahossenhasib/Nine_Modern_Moto_Client" target='_blank'>
-      <button class="btn btn-sm">Client</button>
+      <button class="btn btn-sm resume-button">Client</button>
       </a>
       <a href="https://github.com/afzahossenhasib/Nine_Modern_Moto_Server" target='_blank'>
-      <button class="btn btn-sm">Server</button>
+      <button class="btn btn-sm resume-button">Server</button>
       </a>
       </div>
     </div>
@@ -37,7 +38,7 @@ const Projects = () => {
 <div class="hero bg-base-200 my-20">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <img src={motor} class="max-w-md rounded-lg shadow-2xl" />
-    <div>
+    <div className='mr-8'>
       <h1 class="text-2xl font-bold">MOTOR MANIA (WAREHOUSE-MANAGEMENT FULL-STACK WEBSITE )</h1>
       <p class="py-6">
           <ul>
@@ -46,13 +47,13 @@ const Projects = () => {
             <li>After Login A User Can Add Products, Delete, And Update Products.</li>
           </ul></p>
       <a href="https://motor-mania-65f3c.web.app/">
-      <button class="btn btn-sm">Live Site</button>
+      <button class="btn btn-sm resume-button">Live Site</button>
       </a>
       <a className='mx-5'  href="https://github.com/afzahossenhasib/Eight_Motor_Mania_Client" target='_blank'>
-      <button class="btn btn-sm">Client</button>
+      <button class="btn btn-sm resume-button">Client</button>
       </a>
       <a href="https://github.com/afzahossenhasib/Eight_Motor_Mania_Server" target='_blank'>
-      <button class="btn btn-sm">Server</button>
+      <button class="btn btn-sm resume-button">Server</button>
       </a>
     </div>
   </div>
@@ -61,7 +62,7 @@ const Projects = () => {
 <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
     <img src={fitness} class="max-w-md rounded-lg shadow-2xl" />
-    <div>
+    <div className='ml-8'>
       <h1 class="text-2xl font-bold">FITNESS FRIENDS (INDEPENDENT SERVICE PROVIDER FRONT-END WEBSITE)</h1>
       <p class="py-6">
           <ul>
@@ -72,16 +73,16 @@ const Projects = () => {
           </p>
       <div>
       <a className='mr-5' href="https://gym-trainer-871db.web.app/" target='_blank'>
-      <button class="btn btn-sm">Live Site</button>
+      <button class="btn btn-sm resume-button">Live Site</button>
       </a>
       <a href="https://github.com/afzahossenhasib/Seven_Gym_Trainer" target='_blank'>
-      <button class="btn btn-sm">Client</button>
+      <button class="btn btn-sm resume-button">Client</button>
       </a>
       </div>
     </div>
   </div>
 </div>
-<button class="btn btn-secondary">See More..</button>
+<button class="btn see-button">See More..</button>
         </div>
     );
 };

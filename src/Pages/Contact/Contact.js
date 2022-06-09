@@ -21,43 +21,43 @@ const Contact = () => {
  
 
     return (
-        <div className='contact'>
+        <div className='mb-20 contact'>
             <div class="hero bg-base-200">
   <div class="hero-content flex-col lg:flex-row">
     <img src={contact} class="w-3/6 rounded-lg shadow-2xl" />
-    <div>
+    <div className='ml-8'>
       <h1 class="text-3xl font-bold">Get In Touch Contact Me</h1>
       
       <form ref={form} onSubmit={sendEmail}>
       <div>
       <label class="label">
-    <span class="label-text">Name</span>
+    <span class="label-text mr-5">Name: </span>
     <input type="text" name='name' placeholder="Name" class="input input-bordered w-full max-w-xs" />
   </label>
       </div>
 
       <div>
       <label class="label">
-    <span class="label-text">Email</span>
+    <span class="label-text mr-5">Email:</span>
     <input type="email" name='email' placeholder="Email Address" class="input input-bordered w-full max-w-xs" />
   </label>
       </div>
 
       <div>
       <label class="label">
-    <span class="label-text">Subject</span>
+    <span class="label-text mr-5">Subject:</span>
     <input type="text" name='subject' placeholder="Subject" class="input input-bordered w-full max-w-xs" />
   </label>
       </div>
 
       <div>
       <label class="label">
-    <span class="label-text">Message</span>
-    <textarea class="textarea textarea-bordered" name='message' placeholder="Your Message"></textarea>
+    <span class="label-text">Message:</span>
+    <textarea name="message" id="" cols="30" rows="3"></textarea>
   </label>
       </div>
 
-      <button class="btn">Button</button>
+      <button class="btn resume-button">Send Message</button>
 
       </form>
 
