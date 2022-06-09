@@ -1,6 +1,43 @@
-.contact textarea {
-    border: 1px solid #d2d4d7;
-    border-radius: 10px;
+.contact {
+    margin-top: 7rem;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00BFA6;
+    text-transform: uppercase;
+}
+
+.contact span {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact-card {
+    transition: transform .2s; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-card:hover {
+    transform: scale(1.07);
+}
+
+.send-button {
+    background-color: #00BFA6;   
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 40%;
+}
+
+.send-button:hover {
+    background-color: #079885;
+    color: white;
 }
 
 @media only screen and (max-width: 576px) {

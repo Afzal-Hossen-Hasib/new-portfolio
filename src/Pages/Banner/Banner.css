@@ -3,6 +3,11 @@
     color: #283346;
 }
 
+.banner-div img {
+    background-color: #c3eee8;
+    border-radius: 5rem 5rem 0 0;
+}
+
 .two {
     font-size: 4.5rem;
     font-weight: bold;
@@ -19,7 +24,8 @@
 }
 
 .resume-button:hover {
-    
+    background-color: #079885;
+    color: white;
 }
 
 .banner-div p {

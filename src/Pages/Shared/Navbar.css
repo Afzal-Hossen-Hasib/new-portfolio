@@ -1,12 +1,11 @@
-.n-left {
-    flex: 1;
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-}
-
-.n-name {
+.header-section a {
     font-size: 1.3rem;
     font-weight: bold;
+    text-transform: uppercase;
+    color: #00BFA6;
 }
 
+.header-section a:hover {
+    background-color: #00BFA6;
+    color: black;
+}

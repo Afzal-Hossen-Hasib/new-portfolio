@@ -7,15 +7,40 @@
     text-transform: uppercase;
 }
 
+.card {
+    transition: transform .2s; 
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.card:hover {
+  transform: scale(1.07); 
+}
+
+.card-one {
+    transition: transform .2s; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-one:hover {
+    transform: scale(1.07);
+}
+
 .project-section h1 {
     font-size: 1.3rem;
     font-weight: bold;
     color: #283346;
+    text-transform: uppercase;
 }
 
-.project-section img:hover {
+/* .project-section img:hover {
     transform: scale(1.2);
     transition: transform 3s ease-out;
+} */
+
+.project-section ul li {
+    list-style: disc; 
 }
 
 .see-button {
@@ -30,9 +55,9 @@
     margin: 50px 0;
 }
 
-/* @media only screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
-    .project-div img {
+    .project-section img {
         width: 100% !important;
     }
-} */
+}

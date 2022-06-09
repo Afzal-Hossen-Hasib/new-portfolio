@@ -1,7 +1,7 @@
 footer {
     position: relative;
     width: 100%;
-    background-color: black;
+    background-color: #283346;
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
@@ -58,10 +58,4 @@ footer p {
     margin-bottom: 10px;
     font-size: 1.1em;
     padding-left: 35px;
-}
-
-footer span {
-    color: #ff3100;
-    font-weight: bold;
-    text-transform: uppercase;
 }

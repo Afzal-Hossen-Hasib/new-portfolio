@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import contact from '../../image/email/contact.png'
+import email from '../../image/email/email2.png'
 import './Contact.css'
 
 const Contact = () => {
@@ -21,12 +22,13 @@ const Contact = () => {
  
 
     return (
-        <div className='mb-20 contact'>
-            <div class="hero bg-base-200">
+        <div id='contact' className='mb-20 contact'>
+          <h1 class="text-3xl font-bold mb-3">Get In Touch Contact Me</h1>
+            <div class="hero bg-base-200 shadow-2xl contact-card">
   <div class="hero-content flex-col lg:flex-row">
-    <img src={contact} class="w-3/6 rounded-lg shadow-2xl" />
+    <img src={email} class="w-5/12 rounded-lg" />
     <div className='ml-8'>
-      <h1 class="text-3xl font-bold">Get In Touch Contact Me</h1>
+      
       
       <form ref={form} onSubmit={sendEmail}>
       <div>
@@ -52,12 +54,12 @@ const Contact = () => {
 
       <div>
       <label class="label">
-    <span class="label-text">Message:</span>
-    <textarea name="message" id="" cols="30" rows="3"></textarea>
+    <span class="label-text mr-5">Message:</span>
+    <textarea class="input input-bordered w-full max-w-xs" name="message" id="" cols="37" rows="3" placeholder='Your Message'></textarea>
   </label>
       </div>
 
-      <button class="btn resume-button">Send Message</button>
+      <button class="btn btn-sm send-button shadow-lg shadow-cyan-500/50 mt-5">Send Message</button>
 
       </form>
 
